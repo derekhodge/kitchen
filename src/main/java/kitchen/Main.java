@@ -18,7 +18,7 @@ public class Main {
 		File directory = new File(inputDir);
 		File[] directoryListing = directory.listFiles();
 	    for (File inputFile : directoryListing) {
-	    	
+	    	System.out.println(inputFile);
 	      }
 	}
 	
