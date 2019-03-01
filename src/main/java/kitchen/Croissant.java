@@ -3,7 +3,7 @@ package kitchen;
 public class Croissant extends Pastry{
 
 	
-	public Croissant(double flourWeight, double waterWeight, double saltWeight, double butterWeight) {
+	public Croissant() {
 
 	}
 
