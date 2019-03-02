@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Batch {
-	public List<Pastry> makeBatch(Pastry... pastries){
-		List<Pastry> batch = new ArrayList<Pastry>();     
-		System.out.println(batch);
+	List<Pastry> batch = new ArrayList<>();
+
+	@Override
+	public String toString() {
+		return "Batch [batch=" + batch + "]";
+	}
+
+	public List<Pastry> getBatch() {
 		return batch;
+	}
+
+	public void setBatch(List<Pastry> batch) {
+		this.batch = batch;
 	}
 
 }

@@ -1,11 +1,18 @@
 package kitchen;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Pastry {
+	
+	private static final Logger LOG = LogManager.getLogger(Cook.class);
+	String type;
 	double flourWeight;
 	double waterWeight;
 	double saltWeight;
 	double butterWeight;
 	double weight;
+	CookedStatus cookedStatus = CookedStatus.Raw;
 	
 	Pastry() {
 		super();
